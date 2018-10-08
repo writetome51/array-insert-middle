@@ -1,0 +1,1 @@
+Function that inserts item(s) into the middle of the array.

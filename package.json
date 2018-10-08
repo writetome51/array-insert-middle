@@ -1,0 +1,22 @@
+{
+  "name": "@writetome51/array-insert-middle",
+  "version": "1.0.0",
+  "description": "Function that inserts item(s) into the middle of the array",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "array",
+    "manipulation"
+  ],
+  "author": "Steve Thompson",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {
+    "@writetome51/number-analysis-basic": "latest",
+    "error-if-values-are-not-arrays": "latest",
+    "@writetome51/array-and-index-validation": "latest",
+    "@writetome51/get-rounded-up-down": "latest"
+  }
+}
