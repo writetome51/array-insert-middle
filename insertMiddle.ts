@@ -1,4 +1,5 @@
 import { errorIfValuesAreNotArrays } from 'error-if-values-are-not-arrays';
+import {errorIfNotInteger} from 'basic-data-handling/errorIfNotInteger';
 import { isOdd } from '@writetome51/number-analysis-basic/isOdd_isEven';
 import { errorIfIndexNotValidAfterOffsetWasAdded }
 	from '@writetome51/array-and-index-validation/errorIf/errorIfIndexNotValidAfterOffsetWasAdded';
@@ -13,6 +14,7 @@ import { getRoundedDown } from '@writetome51/get-rounded-up-down/getRounded_getR
 
 export function insertMiddle(values: any[], array, offset = 0) {
 	errorIfValuesAreNotArrays([values, array]);
+	errorIfNotInteger(offset);
 	let index: number;
 	if (isOdd(array.length)) {
 		index = getRoundedDown(array.length / 2);

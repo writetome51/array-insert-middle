@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var error_if_values_are_not_arrays_1 = require("error-if-values-are-not-arrays");
+var errorIfNotInteger_1 = require("basic-data-handling/errorIfNotInteger");
 var isOdd_isEven_1 = require("@writetome51/number-analysis-basic/isOdd_isEven");
 var errorIfIndexNotValidAfterOffsetWasAdded_1 = require("@writetome51/array-and-index-validation/errorIf/errorIfIndexNotValidAfterOffsetWasAdded");
 var getRounded_getRoundedDown_getRoundedUp_1 = require("@writetome51/get-rounded-up-down/getRounded_getRoundedDown_getRoundedUp");
@@ -12,6 +13,7 @@ var getRounded_getRoundedDown_getRoundedUp_1 = require("@writetome51/get-rounded
 function insertMiddle(values, array, offset) {
     if (offset === void 0) { offset = 0; }
     error_if_values_are_not_arrays_1.errorIfValuesAreNotArrays([values, array]);
+    errorIfNotInteger_1.errorIfNotInteger(offset);
     var index;
     if (isOdd_isEven_1.isOdd(array.length)) {
         index = getRounded_getRoundedDown_getRoundedUp_1.getRoundedDown(array.length / 2);

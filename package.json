@@ -8,12 +8,16 @@
   },
   "keywords": [
     "array",
+    "insert",
+    "middle",
+    "items",
     "manipulation"
   ],
   "author": "Steve Thompson",
   "license": "MIT",
   "devDependencies": {},
   "dependencies": {
+    "basic-data-handling": "latest",
     "@writetome51/number-analysis-basic": "latest",
     "error-if-values-are-not-arrays": "latest",
     "@writetome51/array-and-index-validation": "latest",
