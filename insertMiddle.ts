@@ -1,9 +1,9 @@
 import { errorIfValuesAreNotArrays } from 'error-if-values-are-not-arrays';
 import {errorIfNotInteger} from 'basic-data-handling/errorIfNotInteger';
-import { isOdd } from '@writetome51/number-analysis-basic/isOdd_isEven';
+import { isOdd } from '@writetome51/is-odd-is-even';
 import { errorIfIndexNotValidAfterOffsetWasAdded }
 	from '@writetome51/array-and-index-validation/errorIf/errorIfIndexNotValidAfterOffsetWasAdded';
-import { getRoundedDown } from '@writetome51/get-rounded-up-down/getRounded_getRoundedDown_getRoundedUp';
+import { getRoundedDown } from '@writetome51/get-rounded-up-down';
 
 // By default, if array has odd number of items, values will be inserted just
 // before the middle item.  Example:
