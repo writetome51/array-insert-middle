@@ -2,10 +2,18 @@
   "name": "@writetome51/array-insert-middle",
   "version": "1.0.1",
   "description": "Function that inserts item(s) into the middle of the array",
-  "main": "",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/writetome51/array-insert-middle.git"
+  },
+  "bugs": {
+    "url": "https://github.com/writetome51/array-insert-middle/issues"
+  },
+  "homepage": "https://github.com/writetome51/array-insert-middle#readme",
   "keywords": [
     "array",
     "insert",
@@ -17,9 +25,9 @@
   "license": "MIT",
   "devDependencies": {},
   "dependencies": {
+    "error-if-values-are-not-arrays": "latest",
     "basic-data-handling": "latest",
     "@writetome51/is-odd-is-even": "latest",
-    "error-if-values-are-not-arrays": "latest",
     "@writetome51/array-and-index-validation": "latest",
     "@writetome51/get-rounded-up-down": "latest"
   }

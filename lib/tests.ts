@@ -44,3 +44,6 @@ console.log(arr);
 
 insertMiddle(['bbb'], arr);
 console.log(arr);
+
+insertMiddle([[],[]], arr, 1);
+console.log(arr);
