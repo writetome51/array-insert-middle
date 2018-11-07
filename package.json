@@ -1,6 +1,6 @@
 {
   "name": "@writetome51/array-insert-middle",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Function that inserts item(s) into the middle of the array",
   "main": "index.js",
   "scripts": {
