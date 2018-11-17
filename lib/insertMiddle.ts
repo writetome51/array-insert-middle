@@ -1,5 +1,5 @@
 import { errorIfValuesAreNotArrays } from 'error-if-values-are-not-arrays';
-import {errorIfNotInteger} from 'basic-data-handling/errorIfNotInteger';
+import { errorIfNotInteger } from 'basic-data-handling/errorIfNotInteger';
 import { isOdd } from '@writetome51/is-odd-is-even';
 import { errorIfIndexNotValidAfterOffsetWasAdded }
 	from '@writetome51/array-and-index-validation/errorIf/errorIfIndexNotValidAfterOffsetWasAdded';
