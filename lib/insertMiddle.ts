@@ -15,11 +15,9 @@ import { getRoundedDown } from '@writetome51/get-rounded-up-down';
 export function insertMiddle(values: any[], array, offset = 0) {
 	errorIfValuesAreNotArrays([values, array]);
 	errorIfNotInteger(offset);
-	let index: number;
-	if (isOdd(array.length)) {
-		index = getRoundedDown(array.length / 2);
-	}
-	else index = array.length / 2;
+
+	let index = getRoundedDown(array.length / 2);
+
 	index += offset;
 	errorIfIndexNotValidAfterOffsetWasAdded(index, array);
 	array.splice(index, 0, ...values);

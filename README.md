@@ -19,7 +19,7 @@ let array = [1,2,3,4,5];
 insertMiddle([9,10], array);  
 --> [1,2,9,10,3,4,5] .  
 
-If you want to slightly change the insert position, set the
+If you want to slightly change the insert position, set the  
 optional offset parameter to + or - whatever integer you want.
 
 let array = [1,2,3,4,5];  
