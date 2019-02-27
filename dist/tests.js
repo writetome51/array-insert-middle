@@ -1,5 +1,6 @@
-import { insertMiddle } from './index';
-
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var index_1 = require("./index");
 /*************
  If it passes test, it will print this out:
 
@@ -19,51 +20,34 @@ import { insertMiddle } from './index';
  [ 1, 3, 5, 7, 9, 11, 'aaa', 'bbb', 12, 10, 8, 6, 4, 2, '' ]
  [ 1, 3, 5, 7, 9, 11, 'aaa', 'bbb', [], [], 12, 10, 8, 6, 4, 2, '' ]
  ********************/
-
-
-let arr = [''];
-
-insertMiddle([1], arr);
+var arr = [''];
+index_1.insertMiddle([1], arr);
 console.log(arr);
-
-insertMiddle([2], arr);
+index_1.insertMiddle([2], arr);
 console.log(arr);
-
-insertMiddle([3], arr);
+index_1.insertMiddle([3], arr);
 console.log(arr);
-
-insertMiddle([4], arr);
+index_1.insertMiddle([4], arr);
 console.log(arr);
-
-insertMiddle([5], arr);
+index_1.insertMiddle([5], arr);
 console.log(arr);
-
-insertMiddle([6], arr);
+index_1.insertMiddle([6], arr);
 console.log(arr);
-
-insertMiddle([7], arr);
+index_1.insertMiddle([7], arr);
 console.log(arr);
-
-insertMiddle([8], arr);
+index_1.insertMiddle([8], arr);
 console.log(arr);
-
-insertMiddle([9], arr);
+index_1.insertMiddle([9], arr);
 console.log(arr);
-
-insertMiddle([10], arr);
+index_1.insertMiddle([10], arr);
 console.log(arr);
-
-insertMiddle([11, 12], arr);
+index_1.insertMiddle([11, 12], arr);
 console.log(arr);
-
-insertMiddle([], arr);
+index_1.insertMiddle([], arr);
 console.log(arr);
-
-insertMiddle(['aaa'], arr);
+index_1.insertMiddle(['aaa'], arr);
 console.log(arr);
-
-insertMiddle(['bbb'], arr);
+index_1.insertMiddle(['bbb'], arr);
 console.log(arr);
-
-insertMiddle([[],[]], arr, 1);
+index_1.insertMiddle([[], []], arr, 1);
 console.log(arr);

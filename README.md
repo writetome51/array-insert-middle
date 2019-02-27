@@ -1,27 +1,35 @@
-To include in your project:
+# insertMiddle(<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;values,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;array,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;offset? = 0<br>): void
 
-import {insertMiddle} from '@writetome51/array-insert-middle';
+Inserts `values` into the middle of `array`.  
+If you want to change the insert position, set the optional `offset` parameter  
+to + or - whatever integer you want.
 
-Function inserts item(s) into the middle of the array.
 
-insertMiddle(values: any[], array, offset = 0);
 
-Example:
-
+## Examples
+```
 let array = [1,2,3,4,5,6];  
 insertMiddle([9,10], array);  
---> [1,2,3,9,10,4,5,6] .  
+// array is now [1,2,3,9,10,4,5,6]
 
-By default, if array has odd number of items, values will be inserted just  
-before the middle item.  Example:  
+
+// By default, if array has odd number of items, values will be inserted just  
+// before the middle item:  
 
 let array = [1,2,3,4,5];  
 insertMiddle([9,10], array);  
---> [1,2,9,10,3,4,5] .  
+// array is now [1,2,9,10,3,4,5]  
 
-If you want to slightly change the insert position, set the  
-optional offset parameter to + or - whatever integer you want.
-
+// This changes the insert position:
 let array = [1,2,3,4,5];  
 insertMiddle([9,10], array, 1);  
---> [1,2,3,9,10,4,5] .  
+// array is now [1,2,3,9,10,4,5] 
+```
+
+## Loading
+```
+// if using TypeScript:
+import {insertMiddle} from '@writetome51/array-insert-middle';
+// if using ES5 JavaScript:
+var insertMiddle = require('@writetome51/array-insert-middle').insertMiddle;
+```

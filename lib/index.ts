@@ -1,6 +1,5 @@
 import { errorIfValuesAreNotArrays } from 'error-if-values-are-not-arrays';
 import { errorIfNotInteger } from 'basic-data-handling/errorIfNotInteger';
-import { isOdd } from '@writetome51/is-odd-is-even';
 import { errorIfIndexNotValidAfterOffsetWasAdded }
 	from '@writetome51/array-and-index-validation/errorIf/errorIfIndexNotValidAfterOffsetWasAdded';
 import { getRoundedDown } from '@writetome51/get-rounded-up-down';
@@ -12,7 +11,7 @@ import { getRoundedDown } from '@writetome51/get-rounded-up-down';
 // optional offset parameter to + or - whatever integer you want.
 
 
-export function insertMiddle(values: any[], array, offset = 0) {
+export function insertMiddle(values: any[], array, offset = 0): void {
 	errorIfValuesAreNotArrays([values, array]);
 	errorIfNotInteger(offset);
 
