@@ -1,6 +1,6 @@
 {
   "name": "@writetome51/array-insert-middle",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Function that inserts item(s) into the middle of the array",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -26,10 +26,9 @@
   "license": "MIT",
   "devDependencies": {},
   "dependencies": {
-    "error-if-values-are-not-arrays": "~1.0.2",
-    "basic-data-handling": "~1.0.15",
-    "@writetome51/is-odd-is-even": "~1.0.2",
-    "@writetome51/array-and-index-validation": "~1.0.6",
-    "@writetome51/get-rounded-up-down": "~1.0.9"
+    "@writetome51/array-insert-at": "~2.0.3",
+    "@writetome51/get-rounded-up-down": "~1.0.10",
+    "error-if-index-not-valid-after-offset-was-added": "~1.0.0",
+    "error-if-not-integer": "~1.0.0"
   }
 }

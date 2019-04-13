@@ -1,8 +1,7 @@
-import { errorIfValuesAreNotArrays } from 'error-if-values-are-not-arrays';
-import { errorIfNotInteger } from 'basic-data-handling/errorIfNotInteger';
-import { errorIfIndexNotValidAfterOffsetWasAdded }
-	from '@writetome51/array-and-index-validation/errorIf/errorIfIndexNotValidAfterOffsetWasAdded';
+import { errorIfIndexNotValidAfterOffsetWasAdded } from 'error-if-index-not-valid-after-offset-was-added';
+import { errorIfNotInteger } from 'error-if-not-integer';
 import { getRoundedDown } from '@writetome51/get-rounded-up-down';
+import { insertAt } from '@writetome51/array-insert-at';
 
 // By default, if array has odd number of items, values will be inserted just
 // before the middle item.  Example:
@@ -12,12 +11,12 @@ import { getRoundedDown } from '@writetome51/get-rounded-up-down';
 
 
 export function insertMiddle(values: any[], array, offset = 0): void {
-	errorIfValuesAreNotArrays([values, array]);
-	errorIfNotInteger(offset);
 
 	let index = getRoundedDown(array.length / 2);
 
+	errorIfNotInteger(offset);
 	index += offset;
-	errorIfIndexNotValidAfterOffsetWasAdded(index, array);
-	array.splice(index, 0, ...values);
+	errorIfIndexNotValidAfterOffsetWasAdded(index, array.length);
+
+	insertAt(index, values, array);
 }
